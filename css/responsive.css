@@ -1,0 +1,167 @@
+/* ----- Width ----- */
+
+@media only screen and (max-width: 400px) {
+    .hero-title,
+    .about-title {
+        font-size: 3rem !important;
+    }
+    .progress-title {
+        font-size: 2rem;
+    }
+    .hero-subtitle {
+        font-size: 1.5rem !important;
+    }
+    #about {
+        height: 50vh;
+    }
+    .about-title {
+        margin-top: 10%;
+    }
+    .about-logo-img {
+        width: 50%;
+    }
+    .open-menu {
+        top: 22px;
+        right: 10px;
+    }
+    .menu-icon {
+        font-size: 30px;
+    }
+    .overlay-menu a {
+        font-size: 20px
+    }
+    .overlay-menu .closebtn {
+        font-size: 30px;
+        top: 5px;
+        right: 10px;
+    }
+    .progress-left-block,
+    .progress-center-block,
+    .progress-right-block {
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .hero-title,
+    .about-title,
+    .contact-title {
+        font-size: 4rem;
+    }
+    .progress-title,
+    .prize-title,
+    .partners-title {
+        font-size: 2.5rem;
+    }
+    .hero-subtitle {
+        font-size: 2rem;
+    }
+    #about {
+        height: 75vh;
+    }
+    .about-title {
+        margin-top: 10%;
+    }
+    .about-right-block {
+        height: 85vh;
+    }
+    .about-logo-img {
+        width: 50%;
+    }
+    .open-menu {
+        top: 22px;
+        right: 10px;
+    }
+    .menu-icon {
+        font-size: 30px;
+    }
+    .overlay-menu a {
+        font-size: 20px
+    }
+    .overlay-menu .closebtn {
+        font-size: 30px;
+        top: 5px;
+        right: 10px;
+    }
+    .second-parallax-image {
+        position: static;
+    }
+    .second-parallax-text {
+        text-align: center;
+        position: relative;
+    }
+    .second-parallax-title {
+        font-size: 4rem;
+    }
+    .second-parallax-subtitle {
+        font-size: 1.5rem;
+    }
+    #prize {
+        height: 265vh;
+    }
+    .prize-responsive {
+        background-color: #282a36;
+    }
+    .container {
+        width: 100%;
+        position: relative;
+    }
+    .overlay-quebec {
+        position: absolute;
+        width: 100%;
+    }
+    .overlay-quebec-content {
+        position: absolute;
+        width: 100%;
+    }
+    .overlay-quebec-logo {
+        width: 25%;
+    }
+    .prize-responsive {
+        height: 100vh;
+    }
+    #contact {
+        height: 100vh;
+        position: relative;
+    }
+    .contact-left-block {
+        background-color: #191a21;
+        height: 100px;
+    }
+    .contact-title {
+        margin-top: 0;
+    }
+    .contact-logo-img {
+        width: 75%;
+    }
+    .contact-jsco,
+    .contact-lamelee,
+    {
+        font-size: 0.75rem;
+    }
+    .contact-mail {
+        font-size: 12px;
+    }
+    .footer {
+        height: 85vh;
+    }
+    .footer-copyright {
+        background-color: transparent !important;
+    }
+}
+
+@media only screen and (max-width: 720px) {}
+
+
+/* ----- Height ----- */
+
+@media screen and (max-height: 450px) {
+    .overlay-menu a {
+        font-size: 20px
+    }
+    .overlay-menu .closebtn {
+        font-size: 10px;
+        top: 5px;
+        right: 5px;
+    }
+}

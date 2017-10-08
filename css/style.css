@@ -1,0 +1,492 @@
+body {
+    background-color: #191a21;
+}
+
+
+/* ----- Modal Inscription Team ----- */
+
+.team-inscription-header {
+    background-color: #191a21;
+    color: #defa8c;
+}
+
+.team-inscription-footer {
+    background-color: #191a21;
+    color: #defa8c;
+}
+
+.team-inscription-validate {
+    width: 100px;
+    height: 35px;
+    background-color: #defa8c;
+    color: #191a21;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* ----- Menu ----- */
+
+.overlay-menu {
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #191a21;
+    opacity: 0.9;
+    overflow: hidden;
+    transition: 0.5s;
+    position: fixed;
+    z-index: 2;
+}
+
+.overlay-content-menu {
+    width: 100%;
+    top: 25%;
+    text-align: center;
+    margin-top: 25px;
+    position: relative;
+}
+
+.overlay-menu a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    display: block;
+    transition: 0.3s;
+    color: #bd93f9;
+}
+
+.overlay-menu a:hover,
+.overlay-menu a:focus {
+    color: #defa8c;
+}
+
+.overlay-menu .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 60px;
+}
+
+.open-menu {
+    position: fixed;
+    z-index: 1;
+    cursor: pointer;
+    top: 47px;
+    right: 22px;
+    color: #defa8c;
+}
+
+.menu-icon {
+    font-size: 60px;
+}
+
+
+/* ----- Hero Section ----- */
+
+.hero-image {
+    background: url('../images/Toulouse-nb.jpg') center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.hero-title {
+    font-family: 'Monoton', cursive;
+    font-size: 6rem;
+    color: #defa8c;
+}
+
+.hero-subtitle {
+    font-size: 3rem;
+    color: #defa8c;
+}
+
+
+/* ----- Second Parallax ----- */
+
+.second-parallax-image {
+    background: url('../images/Toulouse-nb.jpg') center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 50vh;
+    position: relative;
+}
+
+.second-parallax-text {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.second-parallax-title {
+    font-family: 'Monoton', cursive;
+    font-size: 6rem;
+    color: #defa8c;
+}
+
+.second-parallax-subtitle {
+    font-size: 3rem;
+    color: #defa8c;
+}
+
+
+/* ----- third Parallax ----- */
+
+.third-parallax-image {
+    background: url('../images/Toulouse-nb.jpg') center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 50vh;
+    position: relative;
+}
+
+.third-parallax-text {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.third-parallax-title {
+    font-family: 'Monoton', cursive;
+    font-size: 6rem;
+    color: #defa8c;
+}
+
+.third-parallax-subtitle {
+    font-size: 3rem;
+    color: #defa8c;
+}
+
+
+/* ----- fourth Parallax ----- */
+
+.fourth-parallax-image {
+    background: url('../images/Toulouse-nb.jpg') center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 50vh;
+    position: relative;
+}
+
+.fourth-parallax-text {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.fourth-parallax-title {
+    font-family: 'Monoton', cursive;
+    font-size: 6rem;
+    color: #defa8c;
+}
+
+.fourth-parallax-subtitle {
+    font-size: 3rem;
+    color: #defa8c;
+}
+
+
+/* ----- About Section ----- */
+
+#about {
+    height: 100vh;
+}
+
+.about-right-block {
+    height: 100vh;
+    background-color: #282a36;
+}
+
+.about-title {
+    color: #8be9fd;
+    font-family: 'Monoton', cursive;
+    font-size: 6rem;
+    margin-top: 65%;
+}
+
+.about-icon {
+    color: #defa8c;
+    margin-top: 10%;
+}
+
+.about-text {
+    color: #defa8c;
+    margin-top: 10%;
+}
+
+.about-logo {
+    margin-top: 5%;
+}
+
+
+/* ----- Progress Section ----- */
+
+#progress {
+    height: 100vh !important;
+}
+
+.progress-title {
+    font-family: 'Monoton', cursive;
+    color: #8be9fd;
+    font-size: 6rem;
+    margin-top: 2.5%;
+}
+
+.progress-subtitle {
+    color: #defa8c;
+    padding-bottom: 30px;
+}
+
+.progress-left-block,
+.progress-center-block,
+.progress-right-block {
+    padding-top: 5%;
+    height: 697px;
+}
+
+.progress-left-block,
+.progress-right-block {
+    background-color: #282a36;
+    color: #bd93f9;
+}
+
+.progress-center-block {
+    background-color: #21222c;
+    color: #bd93f9;
+}
+
+.progress-icon {
+    padding-top: 0%;
+}
+
+.progress-team-title,
+.progress-participate-title,
+.progress-progress-title,
+.progress-team-text,
+.progress-participate-text,
+.progress-progress-text {
+    padding-top: 5%;
+}
+
+.progress-team-inscription {
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    color: #bd93f9;
+    border: 2px solid #bd93f9;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.progress-team-inscription:hover {
+    background-color: #bd93f9;
+    color: #282a36;
+    border: none;
+}
+
+
+/* ----- Prize Section ----- */
+
+#prize {
+    height: 100vh;
+}
+
+.prize-title {
+    font-family: 'Monoton', cursive;
+    color: #8be9fd;
+    font-size: 6rem;
+    padding-top: 2.5%;
+}
+
+.prize-subtitle {
+    color: #defa8c;
+    padding-bottom: 30px;
+}
+
+.ville-quebec-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.overlay-quebec {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #191a21;
+}
+
+.container:hover .overlay-quebec {
+    opacity: 1;
+}
+
+.prize-text {
+    color: #defa8c;
+}
+
+.overlay-quebec-content {
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+/* ----- Partners Section ----- */
+
+#partners {
+    height: 100vh;
+}
+
+.partners-title {
+    font-family: 'Monoton', cursive;
+    color: #8be9fd;
+    font-size: 6rem;
+    padding-top: 2.5%;
+}
+
+.partners-prime {
+    width: 200px;
+    height: 50px;
+    background-color: #defa8c;
+    color: #191a21;
+    border: none;
+}
+
+
+/* ----- Contact Section ----- */
+
+#contact {
+    height: 100vh;
+}
+
+.contact-right-block {
+    height: 100vh;
+    background-color: #282a36;
+}
+
+.contact-title {
+    color: #8be9fd;
+    font-family: 'Monoton', cursive;
+    font-size: 6rem;
+    margin-top: 65%;
+}
+
+.contact-icon {
+    color: #defa8c;
+    margin-top: 10%;
+}
+
+.contact-text {
+    color: #defa8c;
+    margin-top: 10%;
+}
+
+.contact-logo {
+    margin-top: 5%;
+}
+
+.contact-jsco,
+.contact-lamelee {
+    color: #8be9fd;
+}
+
+.contact-mail {
+    color: #8be9fd;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contact-mail:hover {
+    color: #defa8c;
+}
+
+
+/* ----- Footer ----- */
+
+.footer {
+    background-color: #21222c;
+    color: #defa8c;
+    height: 200px;
+}
+
+.footer-copyright {
+    background-color: #191a21;
+    color: #8be9fd;
+}
+
+.mentions-text {
+    text-decoration: none;
+}
+
+.mentions-text:hover {
+    color: #defa8c;
+}
+
+.icon-social:hover {
+    color: #bd93f9;
+}
+
+
+/* ----- Mentions Section ----- */
+
+#mentions {
+    height: 100%;
+    color: #8be9fd;
+}
+
+
+/* ----- Mentions Section ----- */
+
+#team {
+    height: 100vh;
+    color: #8be9fd;
+}
+
+
+/* ----- Back to top Btn ----- */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #defa8c;
+    cursor: pointer;
+    padding: 15px;
+}

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DevRace</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton|Raleway">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!-- Back to top BTN -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="back-to-top-btn"><i class="fa fa-arrow-circle-o-up fa-3x"></i></button>
+
+    <!-- Modal Inscription Team -->
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-card-4">
+            <header class="w3-container team-inscription-header">
+                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                <h2 class="w3-center team-inscription-title">Inscrire votre Equipe</h2>
+                <p class="w3-padding-16 w3-center">Vous devez être connecté pour inscrire votre équipe.</p>
+            </header>
+            <div class="w3-row-padding">
+                <div class="w3-container">
+                    <div class="w3-half">
+                        <form class="w3-container">
+                            <p><label>Prénom</label>
+                                <input type="text" class="w3-input"></p>
+                        </form>
+                    </div>
+                    <div class="w3-half">
+                        <form class="w3-container">
+                            <p><label>Nom</label>
+                                <input type="text" class="w3-input"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-row-padding">
+                <div class="w3-container">
+                    <div class="w3-half">
+                        <form class="w3-container">
+                            <p><label>Nom de l'Equipe</label>
+                                <input type="text" class="w3-input"></p>
+                        </form>
+                    </div>
+                    <div class="w3-half">
+                        <form class="w3-container">
+                            <p><label>Sponsor</label>
+                                <input type="text" class="w3-input"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <footer class="w3-container w3-center team-inscription-footer">
+                <button class="team-inscription-validate">Valider</button>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Menu -->
+    <div id="menu" class="overlay-menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+        <div class="overlay-content-menu">
+            <a href="#about" onclick="closeMenu()">A Propos</a>
+            <a href="#progress" onclick="closeMenu()">Déroulement</a>
+            <a href="#prize" onclick="closeMenu()">Récompense</a>
+            <a href="#partners" onclick="closeMenu()">Partenaires</a>
+            <a href="#contact" onclick="closeMenu()">Contact</a>
+        </div>
+    </div>
+
+    <div href="" class="open-menu" onclick="openMenu()"><i class="material-icons menu-icon">more_vert</i></div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1 class="hero-title">DEVRACE</h1>
+                <h4 class="hero-subtitle">Hackathon - Toulouse</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="w3-row">
+            <div class="w3-col s12 m4 l4 w3-center about-left-block">
+                <h1 class="about-title">A Propos</h1>
+            </div>
+            <div class="w3-col s12 m8 l8 w3-center about-right-block">
+                <div class="w3-content">
+                    <h4 class="about-icon"><i class="fa fa-code fa-4x" aria-hidden="true"></i></h4>
+                </div>
+                <div class="w3-content">
+                    <h4 class="about-text">Le DevRace aura pour but de développer un site web afin de promouvoir les formations du Numérique sur la région Occitanie.</h4>
+                </div>
+                <div class="w3-content">
+                    <h4 class="about-text">Le hackathon est co-organisé par l'association JS&Co. et La Mélée Toulouse.</h4>
+                </div>
+                <div class="w3-col s6 m6 l6 w3-content w3-center about-logo">
+                    <img src="images/logo-jsandco.png" alt="Logo Association JS&Co." class="about-logo-img">
+                </div>
+                <div class="w3-col s6 m6 l6 w3-content w3-center about-logo">
+                    <img src="images/logo-lamelee.png" alt="Logo Association La Mélée Toulouse" class="about-logo-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Second Parallax -->
+    <section id="second-parallax" class="w3-hide-small">
+        <div class="second-parallax-image">
+            <div class="second-parallax-text">
+                <h1 class="second-parallax-title">DEVRACE</h1>
+                <h4 class="second-parallax-subtitle">Hackathon - Toulouse</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Section -->
+    <section id="progress">
+        <div class="w3-row" class="progress">
+            <div class="w3-col s12 m12 l12 w3-center progress-block">
+                <h1 class="progress-title">Déroulement</h1>
+                <h4 class="w3-container progress-subtitle">Le DevRace est un événement OFF de La MéléeNum qui se déroulera du 13 au 18 novembre 2017 à La Cantine Aubuisson.</h4>
+            </div>
+            <div class="w3-col s12 m4 l4 w3-center w3-container progress-left-block">
+                <div class="progress-icon"><i class="fa fa-group fa-5x progress-team-icon" aria-hidden="true"></i></div>
+                <h1 class="progress-team-title">Equipe</h1>
+                <p class="w3-container progress-team-text">7 équipes de 2 personnes à 3 personnes maximum seront sélectionnées pour particper au DevRace.</p>
+                <p class="w3-container progress-team-text">Les équipes devront avoir un partenaires/sponsors pour particper à l'événement.</p>
+                <button class="progress-team-inscription" onclick="document.getElementById('id01').style.display='block'">Inscrire Votre Equipe</button>
+                <a href="pages/team.html"><button class="progress-team-inscription">Les Equipes</button></a>
+            </div>
+            <div class="w3-col s12 m4 l4 w3-center w3-container progress-center-block">
+                <div class="progress-icon"><i class="fa fa-check-square-o fa-5x progress-team-icon" aria-hidden="true"></i></div>
+                <h1 class="progress-participate-title">Qui peut participer ?</h1>
+                <p class="w3-container progress-participate-text">ESN / SSII</p>
+                <p class="w3-container progress-participate-text">Ecole d'Ingénieur</p>
+                <p class="w3-container progress-participate-text">Centre de formation</p>
+                <p class="w3-container progress-participate-text">Agence Web ...</p>
+            </div>
+            <div class="w3-col s12 m4 l4 w3-center w3-container progress-right-block">
+                <div class="progress-icon"><i class="fa fa-calendar fa-5x progress-team-icon" aria-hidden="true"></i></div>
+                <h1 class="progress-progress-title">Déroulement</h1>
+                <p class="w3-container progress-progress-text">Le DevRace débutera le lundi 18 sept 2017 à 19h avec la soirée de lancement et les spécifications du hackathon.</p>
+                <p class="w3-container progress-progress-text">Et se terminera le jeudi 21 sptembre 2017 ou le vendredi 22 septembre 2017 par le pitch des projets ainsi que la remise des prix pour les vainqueurs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Third Parallax -->
+    <section id="third-parallax " class="w3-hide-small">
+        <div class="third-parallax-image">
+            <div class="third-parallax-text">
+                <h1 class="third-parallax-title">DEVRACE</h1>
+                <h4 class="third-parallax-subtitle">Hackathon - Toulouse</h4>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Prize Section -->
+    <section id="prize">
+        <div class="w3-row">
+            <div class="w3-content w3-conainer w3-center">
+                <h1 class="prize-title">Récompense</h1>
+                <h4 class="prize-subtitle w3-hide-small">Pour découvrir le prix pour les vainqueurs passer votre souris sur la photo.</h4>
+            </div>
+        </div>
+        <div class="w3-row">
+            <div class="container">
+                <img src="images/quebec.jpg" alt="Photo Ville de Québec nuit tombante" class="ville-quebec-img">
+                <div class="overlay-quebec w3-hide-small">
+                    <div class="w3-content w3-container w3-center overlay-quebec-content">
+                        <p class="prize-text w3-padding-24">Pour les vainqueurs du hackathon 4 jours chez nos cousins Québecois pendant la semaine numérique entre le 5 et le 15 avril 2018.</p>
+                        <p class="prize-text w3-padding-24">En partenariat avec :</p>
+                        <img src="images/logo-lamelee.png" alt="" class="overlay-quebec-logo">
+                        <img src="images/logo-quebec-numerique.jpg" alt="" class="overlay-quebec-logo">
+                        <img src="images/logo-villedequebec.jpg" alt="" class="overlay-quebec-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-hide-large prize-responsive">
+            <div class="w3-content w3-container w3-center">
+                <p class="prize-text w3-padding-24">Pour les vainqueurs du hackathon 4 jours chez nos cousins Québecois pendant la semaine numérique entre le 5 et le 15 avril 2018.</p>
+                <p class="prize-text w3-padding-24">En partenariat avec :</p>
+                <img src="images/logo-lamelee.png" alt="" class="overlay-quebec-logo">
+                <img src="images/logo-quebec-numerique.jpg" alt="" class="overlay-quebec-logo">
+                <img src="images/logo-villedequebec.jpg" alt="" class="overlay-quebec-logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Third Parallax -->
+    <section id="third-parallax" class="w3-hide-small">
+        <div class="third-parallax-image">
+            <div class="third-parallax-text">
+                <h1 class="third-parallax-title">DEVRACE</h1>
+                <h4 class="third-parallax-subtitle">Hackathon - Toulouse</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="w3-hide-small">
+        <div class="w3-row">
+            <div class="w3-content w3-container w3-center">
+                <h1 class="partners-title">Partenaires</h1>
+                <a href="pages/partners.html" class="w3-padding-48"><button>Devenir Partenaire ?</button></a>
+            </div>
+            <div class="w3-row">
+                <div class="w3-content w3-container w3-center w3-padding-64">
+                    <div class="w3-quarter">
+                        <img src="images/logo-lamelee.png" alt="">
+                    </div>
+                    <div class="w3-quarter">
+                        <img src="images/logo-quebec-numerique.jpg" alt="">
+                    </div>
+                    <div class="w3-quarter">
+                        <img src="images/logo-villedequebec.jpg" alt="">
+                    </div>
+                    <div class="w3-quarter">
+                        <img src="images/logo-ipi.jpg" alt="">
+                    </div>
+                </div>
+                <div class="w3-content w3-container w3-center">
+                    <div class="w3-quarter">
+                        <button class="partners-prime">Prime Partners</button>
+                    </div>
+                    <div class="w3-quarter">
+                        <button class="partners-prime">Prime Partners</button>
+                    </div>
+                    <div class="w3-quarter">
+                        <button class="partners-prime">Prime Partners</button>
+                    </div>
+                    <div class="w3-quarter">
+                        <button class="partners-prime">Prime Partners</button>
+                    </div>
+                </div>
+                <div class="w3-container w3-center w3-padding-64">
+                    <div class="w3-col s2 m2 l2">
+                        <img src="images/logo-lamelee.png" alt="">
+                    </div>
+                    <div class="w3-col s2 m2 l2">
+                        <img src="images/logo-quebec-numerique.jpg" alt="">
+                    </div>
+                    <div class="w3-col s2 m2 l2">
+                        <img src="images/logo-villedequebec.jpg" alt="">
+                    </div>
+                    <div class="w3-col s2 m2 l2">
+                        <img src="images/logo-lamelee.png" alt="">
+                    </div>
+                    <div class="w3-col s2 m2 l2">
+                        <img src="images/logo-quebec-numerique.jpg" alt="">
+                    </div>
+                    <div class="w3-col s2 m2 l2">
+                        <img src="images/logo-villedequebec.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- fourth Parallax -->
+    <section id="fourth-parallax" class="w3-hide-small">
+        <div class="fourth-parallax-image">
+            <div class="fourth-parallax-text">
+                <h1 class="fourth-parallax-title">DEVRACE</h1>
+                <h4 class="fourth-parallax-subtitle">Hackathon - Toulouse</h4>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="w3-row">
+            <div class="w3-col s12 m4 l4 w3-center contact-left-block">
+                <h1 class="contact-title">Contact</h1>
+            </div>
+            <div class="w3-col s12 m8 l8 w3-center contact-right-block">
+                <div class="w3-content">
+                    <h4 class="contact-icon"><i class="fa fa-address-book-o fa-4x" aria-hidden="true"></i></h4>
+                </div>
+                <div class="w3-col s6 m6 l6 w3-content w3-center contact-logo">
+                    <img src="images/logo-jsandco.png" alt="Logo Association JS&Co." class="contact-logo-img">
+                </div>
+                <div class="w3-col s6 m6 l6 w3-content w3-center contact-logo">
+                    <img src="images/logo-lamelee.png" alt="Logo Association La Mélée Toulouse" class="contact-logo-img">
+                </div>
+                <div class="w3-col s6 m6 l6 w3-content w3-center contact-logo">
+                    <h2 class="contact-jsco">Jérôme Mouly</h2>
+                    <a href="mailto:jerome.m@js-and-co.fr" class="contact-mail">
+                        <h2 class="contact-mail">jerome.m@js-and-co.fr</h2>
+                    </a>
+                </div>
+                <div class="w3-col s6 m6 l6 w3-content w3-center contact-logo">
+                    <h2 class="contact-lamelee">Jérémy Simonklein</h2>
+                    <a href="mailto:jeremy.simonklein@gmail.com" class="contact-mail">
+                        <h2 class="contact-mail">jeremy.simonklein@gmail.com</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="w3-container footer">
+            <div class="w3-row footer-first">
+                <div class="w3-col s12 m6 l6 w3-center">
+                    <h5 class="twitter-title"># Twitter Feed</h5>
+                    <p class="twitter-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas nam sit dolorem repellendus enim tempora quam nemo fuga, ex culpa eligendi perspiciatis autem architecto quidem? Distinctio eius id labore nemo.</p>
+                </div>
+                <div class="w3-col s12 m3 l3 w3-center">
+                    <h5 class="follow-title">La Mélée - Nous suivre</h5>
+                    <a href="https://www.facebook.com/association.lamelee/" class="icon-social"><i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/La_Melee" class="icon-social"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a>
+                </div>
+                <div class="w3-col s12 m3 l3 w3-center">
+                    <h5 class="follow-title">JS&Co. - Nous Suivre</h5>
+                    <a href="https://www.facebook.com/js.and.co.association/" class="icon-social"><i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/JS_and_Co" class="icon-social"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright w3-center">
+            <p class="copyright-text">2017 &#169; Tous Droits Réservés - <a href="pages/mentions.html" class="mentions-text">Mentions Légales</a></p>
+        </div>
+    </footer>
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
