@@ -79,6 +79,16 @@ body {
     color: #defa8c;
 }
 
+.home-link {
+    position: fixed;
+    z-index: 1;
+    cursor: pointer;
+    top: 25px;
+    left: 25px;
+    color: #defa8c;
+    font-family: 'Monoton', cursive;
+}
+
 .menu-icon {
     font-size: 60px;
 }
@@ -384,6 +394,15 @@ body {
     border: none;
 }
 
+.partners-btn {
+    width: 200px;
+    height: 50px;
+    background-color: #defa8c;
+    color: #191a21;
+    border: none;
+    cursor: pointer;
+}
+
 
 /* ----- Contact Section ----- */
 
@@ -467,7 +486,7 @@ body {
 }
 
 
-/* ----- Mentions Section ----- */
+/* ----- Team Section ----- */
 
 #team {
     height: 100vh;
@@ -489,4 +508,57 @@ body {
     color: #defa8c;
     cursor: pointer;
     padding: 15px;
+}
+
+
+/* ----- Become Partners Page ----- */
+
+#become-partners {
+    height: 100vh;
+}
+
+.become-partners-title {
+    font-family: 'Monoton', cursive;
+    color: #8be9fd;
+    font-size: 4rem;
+    margin-top: 60%;
+}
+
+.become-partners-right-block {
+    background-color: #282a36;
+    height: 100vh;
+}
+
+.become-partners-icon {
+    color: #defa8c;
+    margin-top: 5%;
+}
+
+.become-partners-text-block {
+    margin-top: 10%;
+}
+
+.become-partners-text {
+    color: #bd93f9;
+    padding-top: 50px;
+}
+
+.become-partners-btn-link {
+    cursor: pointer;
+}
+
+.become-partners-btn {
+    background-color: transparent;
+    border: 2px solid #defa8c;
+    color: #defa8c;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+.become-partners-btn:hover {
+    background-color: #defa8c;
+    border: 2px solid #defa8c;
+    color: #191a21;
 }
