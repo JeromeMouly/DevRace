@@ -1,6 +1,11 @@
 body, html {
     height: 100%;
     margin: 0;
+    background-color: #191a21;
+}
+
+a {
+    text-decoration: none;
 }
 
 p {
@@ -109,6 +114,8 @@ p {
 .hero-image {
     background-image: url('../images/Toulouse-nb.jpg');
     background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     height: 100%;
@@ -135,11 +142,23 @@ p {
 }
 
 
+/* ----- Second Parallax ----- */
+
+.second-parallax {
+    background-image: url('../images/code.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 50%;
+}
+
+
 /* ----- About ----- */
 
 #about {
     height: 100%;
-    background-color: #191a21;
 }
 
 .about-right-block {
@@ -167,4 +186,51 @@ p {
 
 .about-logo {
     margin-top: 5%;
+}
+
+
+/* ----- Progress ----- */
+
+#progress {
+    height: 100%;
+}
+
+.progress-title {
+    font-family: 'Monoton', cursive;
+    font-size: 4rem;
+    color: #8be9fd;
+}
+
+.progress-subtitle {
+    color: #defa8c;
+}
+
+.progress-left-block {
+    background-color: #21222c;
+    height: 85vh;
+}
+
+.progress-center-block {
+    background-color: #282a36;
+    height: 85vh;
+}
+
+.progress-right-block {
+    background-color: #21222c;
+    height: 85vh;
+}
+
+.progress-icon, .progress-block-title  {
+    margin-top: 20%;
+    color: #bd93f9;
+}
+
+.progress-block-title  {
+    margin-top: 5%;
+    color: #bd93f9;
+}
+
+.progress-text {
+    color: #bd93f9;
+    margin-top: 10%;
 }
