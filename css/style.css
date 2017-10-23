@@ -197,40 +197,46 @@ p {
 
 .progress-title {
     font-family: 'Monoton', cursive;
-    font-size: 4rem;
+    font-size: 3rem;
     color: #8be9fd;
+    margin-top: 85%;
 }
 
 .progress-subtitle {
     color: #defa8c;
 }
 
-.progress-left-block {
-    background-color: #21222c;
-    height: 85vh;
+.progress-top-left-block, .progress-top-right-block, .progress-bottom-left-block, .progress-bottom-right-block {
+    height: 50vh;
 }
 
-.progress-center-block {
-    background-color: #282a36;
-    height: 85vh;
+.progress-top-left-block, .progress-bottom-right-block {
+    background-color: #defa8c;
+    color: #191a21;
 }
 
-.progress-right-block {
-    background-color: #21222c;
-    height: 85vh;
+.progress-top-right-block, .progress-bottom-left-block {
+    color: #defa8c;
 }
 
-.progress-icon, .progress-block-title  {
-    margin-top: 20%;
-    color: #bd93f9;
+.progress-icon {
+    margin-top: 17%;
 }
 
-.progress-block-title  {
-    margin-top: 5%;
-    color: #bd93f9;
+.progress-btn-block {
+    margin-top: 25%;
 }
 
-.progress-text {
-    color: #bd93f9;
-    margin-top: 10%;
+.progress-inscription-btn, .progress-team-btn {
+    width: 250px;
+    height: 60px;
+    background-color: transparent;
+    border: 2px solid #191a21;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+.progress-inscription-btn:hover, .progress-team-btn:hover {
+    background-color: #191a21;
+    color: #defa8c;
 }
