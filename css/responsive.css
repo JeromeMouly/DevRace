@@ -79,7 +79,19 @@
   .progress-text {
     margin-top: 1%;
   }
-  .progress-left-block, .progress-center-block, .progress-right-block {
+  .progress-left-block {
+    height: 50vh;
+  }
+  .progress-top-left-block {
+    height: 50vh;
+  }
+  .progress-top-right-block {
+    height: 50vh;
+  }
+  .progress-bottom-left-block {
+    height: 50vh;
+  }
+  .progress-bottom-right-block {
     height: 50vh;
   }
 }
