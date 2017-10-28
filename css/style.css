@@ -109,7 +109,7 @@ p {
 }
 
 
-/* ----- Hero ----- */
+/* ----- Parallax ----- */
 
 .hero-image {
     background-image: url('../images/Toulouse-nb.jpg');
@@ -141,11 +141,18 @@ p {
     color: #defa8c;
 }
 
-
-/* ----- Second Parallax ----- */
-
 .second-parallax {
-    background-image: url('../images/code.jpg');
+    background-image: url('../images/Toulouse-nb.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 50%;
+}
+
+.third-parallax {
+    background-image: url('../images/Toulouse-nb.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -239,4 +246,65 @@ p {
 .progress-inscription-btn:hover, .progress-team-btn:hover {
     background-color: #191a21;
     color: #defa8c;
+}
+
+
+/* ----- Prize ----- */
+
+#prize {
+    height: 100%;
+}
+
+.prize-title {
+    font-family: 'Monoton', cursive;
+    font-size: 3rem;
+    color: #8be9fd;
+    margin-top: 85%;
+}
+
+.prize-right-block {
+    height: 100vh;
+    background-color: #282a36;
+}
+
+.prize-text {
+    color: #defa8c;
+}
+
+.prize-container {
+    position: relative;
+    width: 100%;
+    padding-top: 8%;
+  }
+  
+.prize-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+.prize-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #282a36;
+    padding-top: 8%;
+}
+  
+.prize-container:hover .prize-overlay {
+    opacity: 1;
+}
+  
+.prize-text-overlay {
+    color: #defa8c;
+}
+
+.prize-logo-overlay {
+    width: 15%;
 }
