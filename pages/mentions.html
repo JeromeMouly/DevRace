@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DevRace</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton|Raleway">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!-- Menu -->
+    <div id="menu" class="overlay-menu">
+        <a href="javascript:void(0)" class="closeBtn" onclick="closeMenu()">&times;</a>
+        <div class="overlay-content-menu">
+            <a href="../#about" onclick="closeMenu()">A Propos</a>
+            <a href="../#progress" onclick="closeMenu()">Déroulement</a>
+            <a href="../#prize" onclick="closeMenu()">Récompense</a>
+            <a href="../#contact" onclick="closeMenu()">Contact</a>
+        </div>
+    </div>
+    <span class="burger-menu w3-hide-small" onclick="openMenu()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </span>
+    <span class="menu-responsive w3-hide-large" onclick="openMenu()"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+    <span class="home-link"><a href="../#">DEVRACE</a></span>
+    <span class="inscription-link">S'incrire</span>
+    <span class="connexion-link">Se connecter</span>
+
+    <!-- Back to top BTN -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="back-to-top-btn"><i class="fa fa-arrow-circle-o-up fa-3x"></i></button>
+
+    <!-- Mentions Légales Section -->
+    <section id="mentions">
+        <div class="w3-row">
+            <div class="w3-content w3-container">
+                <div class="w3-col s12 m12 l12">
+                    <h1 class="w3-center mentions-title">Mentions Légales</h1>
+                    <h4 class="w3-padding-48 w3-center">Editeur</h4>
+                    <p>Le site meleenumerique.com est un site édité par l'association "La Mêlée".
+                        <br>
+                        <br> Téléphone : 05 32 10 81 20
+                        <br>
+                        <br> Fax : 05 32 10 81 22
+                        <br>
+                        <br> Email de contact : contact@meleenumerique.com
+                        <br>
+                        <br> N° SIRET : 443 717 830 000 55 - N° SIREN : 443 717 830
+                        <br>
+                        <br> Code APE : 6311Z - N°TVA intracommunautaire : FR954437178300
+                        <br>
+                        <br> Association loi 1901
+                        <br>
+                        <br> Directeur de la publication : Edouard FORZY</p>
+                    <h4 class="w3-padding-48 w3-center">Direction Technique</h4>
+                    <p>Design et Intégration : Jérôme MOULY
+                        <br>
+                        <br> Développement : Jérémy SIMONKLEIN et David PANART</p>
+                    <h4 class="w3-padding-48 w3-center">Hébergeur</h4>
+                    <p>Scalingo SAS, société par actions simplifiée, 15 avenue du Rhin 67100 Strasbourg, France, au capital de 30 000€ SIRET 80866548300018.</p>
+                    <h4 class="w3-padding-48 w3-center">Déclaration CNIL</h4>
+                    <p>En application de la loi n°78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés, le site meleenumerique.com est enregistré à la Commission Nationale de l'Informatique et des Libertés (CNIL) sous le N°794233.
+                        <br>
+                        <br>Vous pouvez, d'ailleurs, visiter le site Internet de la CNIL à ce sujet : <a href="https://www.cnil.fr/">www.cnil.fr</a>.</p>
+                    <h4 class="w3-padding-48 w3-center">Collecte et exploitation des informations</h4>
+                    <p>Si vous nous fournissez, via les formulaires accessibles sur le site meleenumerique.com, des informations personnelles ou professionnelles, ces données saisies demeurent confidentielles au sein de La Mêlée. Ainsi, vous n'aurez pas
+                        besoin, lors de votre prochaine visite, de remplir à nouveau le formulaire que nous vous avons proposé. La sécurité des données est une de nos préoccupations majeures. Cependant, bien que nous mettions tout en œuvre pour protéger
+                        les informations personnelles ou professionnelles vous concernant, nous ne pouvons garantir totalement la sécurité de celles-ci au moment où vous nous les transmettez. En France, les données personnelles sont notamment protégées
+                        par la loi n° 78-87 du 6 janvier 1978, la loi n° 2004-801 du 6 août 2004, l’article L. 226-13 du Code pénal et la Directive Européenne du 24 octobre 1995. A l’occasion de l’utilisation du site meleenumerique.com , peuvent être
+                        recueillis : l’URL des liens par l’intermédiaire desquels l’utilisateur a accédé au site meleenumerique.com, le fournisseur d’accès de l’utilisateur, l’adresse de protocole Internet (IP) de l’utilisateur. En tout état de cause
+                        La Mêlée ne collecte des informations personnelles relatives à l’utilisateur que pour le besoin de certains services proposés par le site meleenumerique.com. L’utilisateur fournit ces informations en toute connaissance de cause,
+                        notamment lorsqu’il procède par lui-même à leur saisie. Il est alors précisé à l’utilisateur du site meleenumerique.com l’obligation ou non de fournir ces informations. Aucune information personnelle de l’utilisateur du site meleenumerique.com
+                        n’est publiée à l’insu de l’utilisateur, échangée, transférée, cédée ou vendue sur un support quelconque à des tiers. Seule l’hypothèse du rachat/ reprise de La Mêlée et de ses droits permettrait la transmission des dites informations
+                        à l’éventuel acquéreur qui serait à son tour tenu de la même obligation de conservation et de modification des données vis à vis de l’utilisateur du site meleenumerique.com . Les bases de données sont protégées par les dispositions
+                        de la loi du 1er juillet 1998 transposant la directive 96/9 du 11 mars 1996 relative à la protection juridique des bases de données. L’association La Mêlée se réserve le droit d'envoyer à ses abonnés, dans une limite raisonnable,
+                        des messages à caractère informatif par voie d'e-mail. L’utilisateur conserve toutefois la possibilité de se désabonner à tout moment de nos services.
+                        <br>
+                        <br>Droit d'accès et de modification Conformément aux articles 38 et suivants de la loi n° 78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés, tout utilisateur peut obtenir communication et, le cas
+                        échéant, rectification ou suppression des informations la concernant, en effectuant sa demande écrite et signée, accompagnée d’une copie du titre d’identité avec signature du titulaire de la pièce, en précisant l’adresse à laquelle
+                        la réponse doit être envoyée, en s'adressant par courrier à : 27, rue d'Aubuisson 31000 Toulouse France ou par message électronique à : cnil@meleenumerique.com.</p>
+                    <h4 class="w3-padding-48 w3-center">Partage de données avec le service de networking SwapCard</h4>
+                    <p>En vous inscrivant à la plateforme meleenumerique.com, vous acceptez que les informations fournies lors de la création de votre compte utilisateur, et lors de l'utilisation des différentes fonctionnalités de la plateforme, soient transmises
+                        au service de networking SwapCard. Ces informations seront utilisées afin de vous créer un compte SwapCard, vous permettant de faire du networking avec les autres utilisateurs de meleenumerique.com, avant, pendant, et après l'événement.
+                        <br>
+                        <br>En accord avec la loi n° 2004-801 du 6 août 2004 relative à l’informatique, aux fichiers et aux libertés, vous disposez d'un droit de regard, de modification, ou de suppression de ces informations, à tout moment, en envoyant
+                        un email concernant votre demande à contact@meleenumerique.com.</p>
+                    <h4 class="w3-padding-48 w3-center">Utilisation de cookies</h4>
+                    <p>La navigation sur le site meleenumerique.com est susceptible de provoquer l’installation de cookie(s) sur l’ordinateur de l’utilisateur. Un cookie est un fichier de petite taille (fichier texte qui contient, en général, un numéro d'identification
+                        ou un code), qui ne permet pas l’identification de l’utilisateur, mais qui enregistre des informations relatives à la navigation d’un ordinateur sur un site (les pages consultées, la date et l'heure de la consultation, etc.). Les
+                        données ainsi obtenues visent à faciliter la navigation ultérieure sur le site, et ont également vocation à permettre diverses mesures de fréquentation. L’utilisateur peut toutefois configurer son ordinateur pour refuser l’installation
+                        des cookies en se reportant à la rubrique d'aide de son navigateur. A défaut d'une telle désactivation, l’utilisateur peut également, s’il utilise le système d'exploitation Windows, faire régulièrement disparaître les cookies de
+                        son ordinateur de la manière suivante : 1. Dans le fichier Windows ouvrir le dossier Cookies, 2. Dans le menu Edition cliquez sur Sélectionnez tout 3. Dans le menu Fichier cliquez sur Supprimer. Si l’utilisateur utilise un autre
+                        système d'exploitation nous l’invitons à se reporter à la rubrique d'aide de son système d'exploitation. L’utilisateur est toutefois avisé que le refus d’installation d’un cookie peut entraîner l’impossibilité d’accéder à certains
+                        services.
+                    </p>
+                    <h4 class="w3-padding-48 w3-center">Responsabilité utilisateur</h4>
+                    <p>Les utilisateurs du site meleenumerique.com peuvent contacter le webmaster par mail : info@meleenumerique.com. L’utilisateur du site meleenumerique.com s’engage à accéder au site en utilisant un matériel récent et avec un navigateur
+                        de dernière génération mis à jour. L'utilisateur du site meleenumerique.com reconnaît avoir vérifié que sa configuration informatique ne contient aucun virus et qu'elle est en parfait état de fonctionnement L'utilisateur reconnaît
+                        également avoir pris connaissance de la présente notice légale et s'engage à la respecter. L'utilisateur reconnaît avoir été informé que le site meleenumerique.com est accessible, à l'exception des cas de force majeure, difficultés
+                        informatiques, difficultés liées aux réseaux de télécommunications ou difficultés techniques ou maintenance. L'utilisateur déclare que le coût de l'accès et de la navigation sur le site meleenumerique.com est à sa charge exclusive.
+                        Dans l'hypothèse où l'utilisateur accèderait au site meleenumerique.com à partir d'un autre Etat que la France ; il s'engage à s'assurer également du respect de la législation localement applicable.
+                    </p>
+                    <h4 class="w3-padding-48 w3-center">Limitations de responsabilité</h4>
+                    <p>L’association La Mêlée ne saurait être tenue pour responsable des dommages directs ou indirects qui pourraient résulter de l'accès ou de l'utilisation du site meleenumerique.com, y compris l'inaccessibilité, les pertes de données,
+                        détériorations, destructions ou virus qui pourraient affecter l'équipement informatique de l'utilisateur et/ou de la présence de virus sur son site. Des espaces interactifs sont à la disposition des utilisateurs. L’association
+                        La Mêlée se réserve le droit de supprimer, sans mise en demeure préalable, tout contenu déposé dans cet espace qui contreviendrait à la législation applicable en France, en particulier aux dispositions relatives à la protection
+                        des données. Le cas échéant, l’association La Mêlée se réserve également la possibilité de mettre en cause la responsabilité civile et/ou pénale de l’utilisateur, notamment en cas de message à caractère raciste, injurieux, diffamant,
+                        ou pornographique, quel que soit le support utilisé (texte, photographie…).
+                    </p>
+                    <h4 class="w3-padding-48 w3-center">Propriété intellectuelle - Droits de reproduction - Contrefaçons</h4>
+                    <p>Le site la melee.com, la structure générale, l'ensemble des éléments (notamment à titre non limitatif les textes, images, graphismes, logo, icônes, sons, logiciels, vidéos, marques...) utilisés sur ces sites sont la propriété exclusive
+                        de l’association La Mêlée, sauf source externe des partenaires. Le site la melee.com est protégé par les lois régissant la propriété intellectuelle. Il est strictement interdit de les reproduire sous quelque forme que ce soit,
+                        dans leur forme ou leur contenu, totalement ou partiellement, et sur tous supports sans un accord écrit de leur auteur : l’association La Mêlée. Toute exploitation non autorisée du site la melee.com ou de l’un quelconque des éléments
+                        qu’il contient sera considérée comme constitutive d’une contrefaçon engageant la responsabilité civile ou pénale de l'auteur de la contrefaçon et sera poursuivie conformément aux dispositions des articles L.335-2 et suivants du
+                        Code de Propriété Intellectuelle.
+                        <br>
+                        <br>L’association La Mêlée accorde cependant le droit d'information sur l'existence du site meleenumerique.com et de l'ensemble de leurs contenus à toute personne désireuse d'en assurer la promotion à la condition expresse que
+                        la source des éléments reproduits soit citée comme suit en mentionnant le nom du site meleenumerique.com et en permettant au lecteur d'y trouver un lien vers meleenumerique.com. Toute utilisation abusive de cette autorisation de
+                        principe pourra être dénoncée et interdite par le propriétaire du site meleenumerique.com, notamment s'il était avéré que cette utilisation contrevienne aux dispositions légales et/ou à l'intérêt de l'éditeur du site meleenumerique.com.
+                    </p>
+                    <h4 class="w3-padding-48 w3-center">Marques</h4>
+                    <p>Les marques (La Mêlée, La Mêlée Numérique, L'Heure de l'Apéri'TIC, Les Trophées de l'Économie Numérique, Mid e-News…) noms commerciaux et logos figurant sur ce site sont des marques déposées auprès de l'INPI. Toute autre marque présente
+                        sur notre site meleenumerique.com est la propriété de la société concernée. Toute reproduction totale ou partielle des marques ou logos, effectuée à partir des éléments du site meleenumerique.com, sans l'autorisation expresse de
+                        l'association La Mêlée est donc prohibée.
+                    </p>
+                    <h4 class="w3-padding-48 w3-center">Liens</h4>
+                    <p>La création de liens avec le site meleenumerique.com est libre. Nous vous demandons simplement d’en prévenir le responsable du site à l’adresse suivante : info@meleenumerique.com.
+                    </p>
+                    <h4 class="w3-padding-48 w3-center">Responsabilité quant aux liens hypertextes</h4>
+                    <p>Les liens hypertextes mis en œuvre par meleenumerique.com en direction d’autres sites ne sauraient engager la responsabilité de l'association La Mêlée, qui garantit n'exercer aucun contrôle sur le contenu de ces sites. meleenumerique.com.
+                        meleenumerique.com ne pourrait être responsable du fait des contenus de ces sites. L'association La Mêlée ne saurait garantir aux internautes l’exactitude et la complétude des informations de toute nature fournies sur le site meleenumerique.com.
+                        En conséquence, la responsabilité de l'association La Mêlée ne pourra être engagée du fait de l’utilisation des informations fournies sur le site meleenumerique.com.
+                    </p>
+                    <h4 class="w3-padding-48 w3-center">Mise en garde générale</h4>
+                    <p>L’association La Mêlée met tout en œuvre pour offrir aux utilisateurs des informations et /ou outils disponibles et vérifiés, sans garantie excédant celles prescrites par la loi. L’association La Mêlée remercie les utilisateurs du
+                        site de lui faire part d'éventuelles omissions, erreurs, propositions ou corrections, en s'adressant au Directeur de la publication.
+                    </p>
+                    <h4 class="w3-padding-48 w3-center">Droit applicable et attribution de juridiction</h4>
+                    <p>Tout litige en relation avec l’utilisation du site meleenumerique.com est soumis au droit français. Il est fait attribution exclusive de juridiction aux tribunaux compétents de Toulouse.
+                    </p>
+                    <h4 class="w3-padding-48 w3-center">Les principales lois concernées</h4>
+                    <p>Loi n° 78-87 du 6 janvier 1978, notamment modifiée par la loi n° 2004-801 du 6 août 2004 relative à l’informatique, aux fichiers et aux libertés. Loi n° 2004-575 du 21 juin 2004 pour la confiance dans l’économie numérique. Code de
+                        la propriété intellectuelle, notamment les dispositions de ses articles L. 122-4, L. 335-2 et suivants.
+                    </p>
+                    <h4 class="w3-padding-48 w3-center">Lexique</h4>
+                    <p>Utilisateur : Internaute se connectant, utilisant le site susnommé. Informations personnelles : « les informations qui permettent, sous quelque forme que ce soit, directement ou non, l’identification des personnes physiques auxquelles
+                        elles s’appliquent » (article 4 de la loi n° 78-17 du 6 janvier 1978).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Footer -->
+   <footer class="footer">
+    <div class="w3-row w3-center">
+        <div class="w3-content w3-container">
+            <div class="w3-col s12 m6 l6">
+                <div class="w3-content w3-container">
+                    <h3>#TwitterFeed</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque fugit molestias fuga recusandae totam aspernatur nihil distinctio ducimus possimus iste blanditiis debitis sit, quam, eveniet praesentium doloremque optio maxime veritatis.</p>
+                </div>
+            </div>
+            <div class="w3-col s12 m3 l3">
+                <div class="w3-content w3-container">
+                    <h4>JS&Co.</h4>
+                    <h4>Nous Suivre</h4>
+                    <h4><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>@js.and.co.association</h4>
+                    <h4><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i><br>@JS_and_Co</h4>
+                </div>
+            </div>
+            <div class="w3-col s12 m3 l3">
+                <div class="w3-content w3-container">
+                    <h4>La Mélée</h4>
+                    <h4>Nous Suivre</h4>
+                    <h4><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>@association.lamelee</h4>
+                    <h4><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i><br>@La_Melee</h4>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p class="footer-copyright-text">2017 © Tous Droits Réservés - <a href="mentions.html">Mentions Légales</a></p>
+        </div>
+    </div>
+</footer>
+
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

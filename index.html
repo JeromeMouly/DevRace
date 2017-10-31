@@ -11,6 +11,114 @@
         <link rel="stylesheet" href="css/responsive.css">
     </head>
     <body>
+
+        <!-- Modal Inscription -->
+    <div id="inscription" class="w3-modal">
+            <div class="w3-modal-content w3-animate-zoom w3-card-4">
+                <header class="w3-container team-inscription-header">
+                    <span onclick="document.getElementById('inscription').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <h2 class="w3-center connexion-title">S'Inscrire</h2>
+                </header>
+                <div class="w3-row-padding">
+                    <form class="w3-container">
+                        <p><label>Votre Email</label>
+                            <input type="text" class="w3-input"></p>
+                    </form>
+                </div>
+                <div class="w3-row-padding">
+                    <form class="w3-container">
+                        <p><label>Mot de passe</label>
+                            <input type="password" class="w3-input"></p>
+                    </form>
+                </div>
+                <div class="w3-row-padding">
+                    <form class="w3-container">
+                        <p><label>Retaper votre Mot de passe</label>
+                            <input type="password" class="w3-input"></p>
+                    </form>
+                </div>
+                <footer class="w3-container w3-center team-inscription-footer">
+                    <button class="team-inscription-validate">Valider</button>
+                </footer>
+            </div>
+        </div>
+
+        <!-- Modal Connexion-->
+        <div id="connexion" class="w3-modal">
+            <div class="w3-modal-content w3-animate-zoom w3-card-4">
+                <header class="w3-container team-inscription-header">
+                    <span onclick="document.getElementById('connexion').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <h2 class="w3-center connexion-title">Se Connecter</h2>
+                </header>
+                <div class="w3-row-padding">
+                    <form class="w3-container">
+                        <p><label>Votre Email</label>
+                            <input type="text" class="w3-input"></p>
+                    </form>
+                </div>
+                <div class="w3-row-padding">
+                    <form class="w3-container">
+                        <p><label>Mot de passe</label>
+                            <input type="password" class="w3-input"></p>
+                    </form>
+                </div>
+                <div class="w3-row-padding">
+                    <p><a href="#" class="lost-password">Mot de passe oublié ?</a></p>
+                </div>
+                <footer class="w3-container w3-center team-inscription-footer">
+                    <button class="team-inscription-validate">Valider</button>
+                </footer>
+            </div>
+        </div>
+    
+        <!-- Modal Inscription Team -->
+        <div id="inscriptionTeam" class="w3-modal">
+            <div class="w3-modal-content w3-animate-zoom w3-card-4">
+                <header class="w3-container team-inscription-header">
+                    <span onclick="document.getElementById('inscriptionTeam').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <h2 class="w3-center team-inscription-title">Inscrire votre Equipe</h2>
+                    <p class="w3-padding-16 w3-center">Vous devez être connecté pour inscrire votre équipe.</p>
+                </header>
+                <div class="w3-row-padding">
+                    <div class="w3-container">
+                        <div class="w3-half">
+                            <form class="w3-container">
+                                <p><label>Prénom</label>
+                                    <input type="text" class="w3-input"></p>
+                            </form>
+                        </div>
+                        <div class="w3-half">
+                            <form class="w3-container">
+                                <p><label>Nom</label>
+                                    <input type="text" class="w3-input"></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-row-padding">
+                    <div class="w3-container">
+                        <div class="w3-half">
+                            <form class="w3-container">
+                                <p><label>Nom de l'Equipe</label>
+                                    <input type="text" class="w3-input"></p>
+                            </form>
+                        </div>
+                        <div class="w3-half">
+                            <form class="w3-container">
+                                <p><label>Sponsor</label>
+                                    <input type="text" class="w3-input"></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <footer class="w3-container w3-center team-inscription-footer">
+                    <button class="team-inscription-validate">Valider</button>
+                </footer>
+            </div>
+        </div>    
+
+         <!-- Back to top BTN -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top" class="back-to-top-btn"><i class="fa fa-arrow-circle-o-up fa-3x"></i></button>
     
         <!-- Menu -->
         <div id="menu" class="overlay-menu">
@@ -19,7 +127,7 @@
                 <a href="#about" onclick="closeMenu()">A Propos</a>
                 <a href="#progress" onclick="closeMenu()">Déroulement</a>
                 <a href="#prize" onclick="closeMenu()">Récompense</a>
-                <a href="#" onclick="closeMenu()">Test</a>
+                <a href="#contact" onclick="closeMenu()">Contact</a>
             </div>
         </div>
         <span class="burger-menu w3-hide-small" onclick="openMenu()">
@@ -29,8 +137,8 @@
         </span>
         <span class="menu-responsive w3-hide-large" onclick="openMenu()"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
         <span class="home-link"><a href="#">DEVRACE</a></span>
-        <span class="inscription-link">S'incrire</span>
-        <span class="connexion-link">Se connecter</span>
+        <a href="#inscription" onclick="document.getElementById('inscription').style.display='block'"><span class="inscription-link">S'incrire</span></a>
+        <a href="#connexion" onclick="document.getElementById('connexion').style.display='block'"><span class="connexion-link">Se connecter</span></a>
 
         <!-- Hero -->
         <div class="w3-opacity hero-image">
@@ -70,13 +178,13 @@
             <div class="w3-row">
                 <div class="w3-col s12 m3 l3 progress-left-block w3-center">
                     <h2 class="progress-title">Déroulement</h2>
-                    <h4 class="progress-subtitle w3-container">Le DevRace est un événement OFF de La MéléeNum. La date et le lieu restent à déterminer.</h4>
+                    <h4 class="progress-subtitle w3-container">Le DevRace est un événement OFF de La MéléeNum.</h4>
                 </div>
                 <div class="w3-col s12 m9 l9 about-right-block w3-center">
                     <div class="w3-col s12 m6 l6 progress-top-left-block w3-center w3-content w3-container">
                         <h4 class="progress-icon fa fa-group fa-5x" style="color:#191a21;"></h4>
                         <h4 class="progress-block-subtitle">Equipe</h4>
-                        <p class="progress-text">7 équipes de 2 personnes à 3 personnes maximum seront sélectionnées pour participer au DevRace.<br><br>Les équipes devront avoir un partenaire/sponsor pour particper à l'événement.</p>
+                        <p class="progress-text">10 équipes de 2 personnes à 4 personnes maximum seront sélectionnées pour participer au DevRace.<br><br>Les équipes devront avoir un partenaire/sponsor pour particper à l'événement.</p>
                     </div>
                     <div class="w3-col s12 m6 l6 progress-top-right-block w3-center w3-content w3-container">
                         <h4 class="progress-icon fa fa-check-square-o fa-5x" style="color:#defa8c;"></h4>
@@ -86,14 +194,14 @@
                     <div class="w3-col s12 m6 l6 progress-bottom-left-block w3-center w3-content w3-container">
                         <h4 class="progress-icon fa fa-calendar fa-5x" style="color:#defa8c;"></h4>
                         <h4 class="progress-block-subtitle">Déroulement</h4>
-                        <p class="progress-text">Vous trouverez prochainnement de plus amples informations sur le déroulement du hackathon.</p>
+                        <p class="progress-text">Le DevRace aura lieu du lundi 22 janvier au samedi 27 janvier 2018 à La Cantine Aubuisson.</p>
                     </div>
                     <div class="w3-col s12 m6 l6 progress-bottom-right-block w3-center w3-content w3-container">
                         <div class="progress-btn-block">
-                            <button class="progress-inscription-btn">Inscrire votre Equipe</button>
+                            <button class="progress-inscription-btn" onclick="document.getElementById('inscriptionTeam').style.display='block'">Inscrire votre Equipe</button>
                             <br>
                             <br>
-                            <button class="progress-team-btn">Les Equipes</button>
+                            <a href="pages/team.html"><button class="progress-team-btn">Les Equipes</button></a>
                         </div>
                     </div>
                 </div>
@@ -126,6 +234,77 @@
                 </div>
             </div>
         </section>
+
+        <!-- Fourth Parallax -->
+        <div class="fourth-parallax w3-opacity-min w3-hide-small"></div>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="w3-row">
+                <div class="w3-col s12 m3 l3 contact-left-block w3-center">
+                    <h2 class="contact-title">Contact</h2>
+                </div>
+                <div class="w3-col s12 m9 l9 contact-left-block w3-center">
+                    <div class="w3-row">
+                        <div class="w3-half w3-content w3-container jsco">
+                            <div class="w3-row">
+                                <div class="w3-content w3-container">
+                                    <h2 class="contact-title-jsco">JS&Co.</h2>
+                                    <h2 class="contact-title-jsco">Jérôme Mouly</h2>
+                                    <img src="images/logo-jsandco.png" alt="Logo Association JS&Co.">
+                                    <br>
+                                    <a href="mailto:jerome.m@js-and-co.fr" class="contact-mail"><h2>jerome.m@js-and-co.fr</h2></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w3-half w3-content w3-container melee">
+                            <div class="w3-row">
+                                <div class="w3-content w3-container">
+                                    <h2 class="contact-title-jsco">La Mélée</h2>
+                                    <h2 class="contact-title-jsco">Jérémy Simonklein</h2>
+                                    <img src="images/logo-lamelee.png" alt="Logo Association La Mélée Toulouse">
+                                    <br>
+                                    <a href="mailto:jeremy.simonklein@gmail.com" class="contact-mail"><h2>jeremy.simonklein@gmail.com</h2></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="w3-row w3-center">
+                <div class="w3-content w3-container">
+                    <div class="w3-col s12 m6 l6">
+                        <div class="w3-content w3-container">
+                            <h3>#TwitterFeed</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque fugit molestias fuga recusandae totam aspernatur nihil distinctio ducimus possimus iste blanditiis debitis sit, quam, eveniet praesentium doloremque optio maxime veritatis.</p>
+                        </div>
+                    </div>
+                    <div class="w3-col s12 m3 l3">
+                        <div class="w3-content w3-container">
+                            <h4>JS&Co.</h4>
+                            <h4>Nous Suivre</h4>
+                            <h4><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>@js.and.co.association</h4>
+                            <h4><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i><br>@JS_and_Co</h4>
+                        </div>
+                    </div>
+                    <div class="w3-col s12 m3 l3">
+                        <div class="w3-content w3-container">
+                            <h4>La Mélée</h4>
+                            <h4>Nous Suivre</h4>
+                            <h4><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>@association.lamelee</h4>
+                            <h4><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i><br>@La_Melee</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p class="footer-copyright-text">2017 © Tous Droits Réservés - <a href="pages/mentions.html">Mentions Légales</a></p>
+                </div>
+            </div>
+        </footer>
 
         <script src="js/app.js"></script>
     </body>
