@@ -164,7 +164,7 @@ p {
     color: #defa8c;
 }
 
-.second-parallax, .third-parallax, .fourth-parallax {
+.second-parallax, .third-parallax, .fourth-parallax, .fith-parallax {
     background-image: url('../images/Toulouse-nb.jpg');
     background-attachment: fixed;
     background-position: center;
@@ -320,6 +320,87 @@ p {
 
 .prize-logo-overlay {
     width: 15%;
+}
+
+
+/* ----- Partners ----- */
+
+#partners {
+    height: 100%;
+}
+
+.partners-title {
+    font-family: 'Monoton', cursive;
+    font-size: 3rem;
+    color: #8be9fd;
+    margin-top: 85%;
+}
+
+.partners-right-block {
+    background-color: #282a36;
+    height: 100vh;
+}
+
+.partners-btn {
+    width: 250px;
+    height: 60px;
+    background-color: transparent;
+    border: 2px solid #defa8c;
+    color: #defa8c;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif; 
+}
+
+/* ----- Become Partners Page ----- */
+
+#become-partners {
+    height: 100vh;
+}
+
+.become-partners-title {
+    font-family: 'Monoton', cursive;
+    color: #8be9fd;
+    font-size: 4rem;
+    margin-top: 60%;
+}
+
+.become-partners-right-block {
+    background-color: #282a36;
+    height: 100vh;
+}
+
+.become-partners-icon {
+    color: #defa8c;
+    margin-top: 5%;
+}
+
+.become-partners-text-block {
+    margin-top: 10%;
+}
+
+.become-partners-text {
+    color: #bd93f9;
+    padding-top: 50px;
+}
+
+.become-partners-btn-link {
+    cursor: pointer;
+}
+
+.become-partners-btn {
+    background-color: transparent;
+    border: 2px solid #defa8c;
+    color: #defa8c;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+.become-partners-btn:hover {
+    background-color: #defa8c;
+    border: 2px solid #defa8c;
+    color: #191a21;
 }
 
 
